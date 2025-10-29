@@ -40,3 +40,6 @@ A background thread processes interrupts one by one.
 Each handled interrupt is logged with timestamps.
 ## Output of the program
 
+<img width="868" height="481" alt="Screenshot from 2025-10-29 13-41-10" src="https://github.com/user-attachments/assets/0d402bfd-71c9-4447-8f72-8a75965b16df" />
+<img width="868" height="481" alt="Screenshot from 2025-10-29 13-40-59" src="https://github.com/user-attachments/assets/662916ef-99de-49f2-bae2-ee01f87a7465" />
+
