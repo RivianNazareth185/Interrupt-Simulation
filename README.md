@@ -12,14 +12,14 @@ Description
 The program contains two main classes:
 
 # 1. InterruptController
-This class manages:
 
+This class manages:
 The interrupt queue (to store incoming interrupts).
 The masking mechanism (to enable or disable specific devices).
 The ISR handler thread (to process interrupts in priority order).
 The log (to store handled interrupts and timestamps).
-Key methods:
 
+# Key methods:
 triggerInterrupt() – Simulates interrupt generation by a device.
 setMask() – Masks or unmasks interrupts for a device.
 startISRHandler() – Starts the background thread that handles interrupts.
@@ -28,15 +28,16 @@ printLog() – Prints all processed interrupts.
 # 2. Main
 This class:
 
-Creates an InterruptController object.
-Starts the interrupt service routine handler.
-Randomly triggers interrupts from devices.
-Displays the interrupt handling log after execution.
-How the Program Works
-Interrupts are randomly generated from devices.
-If a device is unmasked, its interrupt is added to the queue.
-The controller sorts the queue based on device priority.
-A background thread processes interrupts one by one.
+1.Creates an InterruptController object.
+2.Starts the interrupt service routine handler.
+3.Randomly triggers interrupts from devices.
+4.Displays the interrupt handling log after execution.
+
+# How the Program Works
+1.Interrupts are randomly generated from devices.
+2.If a device is unmasked, its interrupt is added to the queue.
+3.The controller sorts the queue based on device priority.
+4.A background thread processes interrupts one by one.
 Each handled interrupt is logged with timestamps.
 ## Output of the program
 
